@@ -1,0 +1,169 @@
+
+	@charset "utf-8";
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	
+}
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+form {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	}
+
+input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+select {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+ul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+
+}
+
+li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+ol {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+
+}
+
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+
+.small {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+
+.big {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.bodystyle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.box1 {
+	padding: 3px;
+	border-width: thin;
+	border-style: solid;
+	border-color: #CCCCCC #666666 #666666 #CCCCCC;
+}
+
+.box2 {
+	border-width: 3px;
+	border-style: solid;
+	padding: 5px;
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	text-decoration: none;
+	background: #C6D580;
+	color: #000;	
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #ADB96E;
+	color: #FFF;
+}
+.container {
+	width: 960px;
+	overflow: hidden;
+	background: #FFF;
+	border: 1px solid #C6D580;
+	margin: 0px 0px; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+.sidebar1 {
+	float: left;
+	width: 210px;
+	background: #EADCAE;
+	padding-bottom: 250px;
+	
+}
+.content {
+	padding: 0px 0;
+	padding-left: 30px;
+	padding-right: 10px;
+	width: 700px;
+	float: left;
+	margin-bottom: -1000px;
+	padding-bottom: 1000px;
+}
+.mandcap{
+	background-color: #cccccc;
+	color:#000000;
+	padding-left:5px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	vertical-align: middle;
+	}
+.border
+{
+	border: 1px solid #cccccc;
+	margin-bottom: 5px;
+}
+.header
+{
+	background:#EADCAE;
+	height: 23px;
+	text-align:right;
+	padding-right: 40px;
+	padding-top: 5px;
+}
